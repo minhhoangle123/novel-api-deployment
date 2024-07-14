@@ -34,9 +34,6 @@ import java.time.Duration;
 import java.util.*;
 import java.util.concurrent.*;
 
-/**
-
- */
 public class LightNovelPlugin implements PluginFactory {
     private String API_KEY = "35OqUcP8sjF1T";
     private final String GET_API_KEY_URL = "https://lightnovel.vn/";
