@@ -1,0 +1,8 @@
+{
+  "metadata": {
+    "id": "truyenfull",
+    "name": "Truyện Full",
+    "url": "https://truyenfull.vn/",
+    "className": "com.crawldata.back_end.novel_plugin_builder.truyenfull.TruyenFullPlugin"
+  }
+}

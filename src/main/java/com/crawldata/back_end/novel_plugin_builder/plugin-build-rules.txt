@@ -1,0 +1,28 @@
+1. Plugin must implements the interface PluginFactory
+
+2. In "plugin.jar" must contains 2 things: a plugin.json and a .class file
+    2.1. "plugin.json" contains the data with sample below:
+        {
+          "metadata": {
+            "id": "pluginId",
+            "name": "Plugin Name",
+            "url": "https://pluginId.vn/",
+            "className": "pluginClass" //which is the name of the .class file
+          }
+        }
+    2.2. .class file is a .java file which has been compiled, which is in "target" folder.
+
+
+
+3. How to build plugin.jar?
+    3.1. Build project.
+    3.2. Go to your plugin.java, delete the line declared its package (MUST DO)
+    3.3. Prepared plugin.json and plugin.class follows section 2
+    3.3. Go to File -> Project Structure -> Artifacts -> Click + button, choose Jar -> Empty.
+    3.4. Rename your jar file.
+    3.5. On the right panel, above plugin.jar, click the "+" button with little arrow in the corner.
+    3.6. Choose File.
+    3.7. Find your plugin.json and plugin.class (Usually are in plugin_builder folder) and select them.
+    3.8. Click Ok.
+    3.9. Go to Build -> Build Artifacts -> Choose your jar and build.
+    3.10. Go to "out" folder, copy your plugin.jar and paste it to "plugins" folder.

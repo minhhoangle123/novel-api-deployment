@@ -1,0 +1,8 @@
+{
+  "metadata": {
+    "id": "lightnovel",
+    "name": "Light Novel",
+    "url": "https://lightnovel.vn/",
+    "className": "com.crawldata.back_end.novel_plugin_builder.lightnovel.LightNovelPlugin"
+  }
+}

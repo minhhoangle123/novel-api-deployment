@@ -1,0 +1,8 @@
+{
+  "metadata": {
+    "id": "epub",
+    "name": "epub",
+    "url": "",
+    "className": "com.crawldata.back_end.export_plugin_builder.epub.EpubPlugin"
+  }
+}

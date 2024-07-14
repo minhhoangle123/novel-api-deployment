@@ -1,0 +1,26 @@
+.navbar-nav li.active {
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: 0 20px 27px 0 rgba(0, 0, 0, 0.05);
+}
+
+.navbar-nav .nav-item {
+    margin-left: 0; /* Set an initial value for margin-left */
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item:hover {
+    margin-left: 10px; /* Adjust this value to your preference */
+}
+
+.nav-icon {
+    display: inline-block;
+    justify-content: center;
+    box-shadow: 0 10px 10px 0 rgba(8, 8, 8, 0.05);
+    background-color: #ffffff;
+    padding: 2px 5px;
+    border-radius: 10px;
+    min-width: 20px;
+}
+

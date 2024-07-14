@@ -1,0 +1,8 @@
+{
+  "metadata": {
+    "id": "audio",
+    "name": "audio",
+    "url": "",
+    "className": "com.crawldata.back_end.export_plugin_builder.audio.AudioPlugin"
+  }
+}

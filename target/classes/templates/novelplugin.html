@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th = "http://www.thymeleaf.org">
+<head th:replace="~{fragment :: html_file}"/>
+<body style="background-color: #f5f7f6;">
+   <div th:replace="~{fragment :: header}"></div>
+
+    <div class="container-fluid w-100 m-0">
+        <div class="row w-100">
+            <div class="col-md-3">
+               <aside th:replace="~{fragment :: sidebar}"></aside>
+            </div>
+            <div class="col-md-9">
+                <!--Body table student-->
+               <main class="main-content border-radius-lg">
+                    <div class="card mt-3">
+                        <form action="/plugin/novel/upload" method="post" enctype="multipart/form-data">
+                            <input type="file" name="file" class="form-control"/>
+                            <button  type="submit"
+                            class="btn btn-primary mt-3 mx-3" style="width: 15%;">Upload</button>
+                        </form>
+
+                        <a  th:href="@{/plugin/novel/deleteAll}"
+                                 class="btn btn-primary mt-3 mx-3" style="width: 15%;">Delete all novel plugins</a>
+
+                        <div class="card-body px-0 pb-2">
+                            <div class="table-responsive p-0">
+                                <table class="table align-items-center mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th 
+                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                Novel Plugin Id</th>
+                                            <th class="text-secondary opacity-7"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <tr th:each="plugin : ${listPlugins}">
+                                            <td>
+                                                <div class="d-flex px-4 py-1">
+                                                    <div class="d-flex flex-column justify-content-center">
+                                                        <h6 class="mb-0 text-sm" th:text="${plugin.id}"></h6>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                            <td class="align-middle">
+                                                &nbsp;
+                                                <a th:href="@{/plugin/novel/delete/{id}(id=${plugin.id})}">
+                                                    delete
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

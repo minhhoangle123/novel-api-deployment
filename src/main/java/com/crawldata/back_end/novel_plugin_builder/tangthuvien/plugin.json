@@ -1,0 +1,8 @@
+{
+  "metadata": {
+    "id": "tangthuvien",
+    "name": "Tàng Thư Viện",
+    "url": "https://truyen.tangthuvien.vn/",
+    "className": "com.crawldata.back_end.novel_plugin_builder.tangthuvien.TangThuVienPlugin"
+  }
+}
