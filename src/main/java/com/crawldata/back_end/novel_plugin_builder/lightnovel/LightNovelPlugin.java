@@ -35,7 +35,7 @@ import java.util.*;
 import java.util.concurrent.*;
 
 /**
- * A plugin implementation for fetching data related to light novels from a remote API.
+
  */
 public class LightNovelPlugin implements PluginFactory {
     private String API_KEY = "35OqUcP8sjF1T";
