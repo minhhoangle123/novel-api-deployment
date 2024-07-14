@@ -37,7 +37,7 @@ import java.util.concurrent.*;
 public class LightNovelPlugin implements PluginFactory {
     private String API_KEY = "35OqUcP8sjF1T";
     private final String GET_API_KEY_URL = "https://lightnovel.vn/";
-    // Constants for API endpoints and other configurations
+    // Constants for API endpoints and other config
     private final String NOVEL_LIST_CHAPTERS_API = "https://lightnovel.vn/_next/data/%s/truyen/%s/danh-sach-chuong.json?page=%s";
     private final String NOVEL_DETAIL_API = "https://lightnovel.vn/_next/data/%s/truyen/%s.json";
     private final String AUTHOR_DETAIL_API = "https://lightnovel.vn/_next/data/%s/tac-gia/%s.json";
