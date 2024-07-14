@@ -50,7 +50,7 @@ public class MeTruyenChuPlugin implements PluginFactory {
     /**
      * Reverses a slug string by replacing dashes and spaces with URL-encoded spaces.
      *
-     * @param slug The slug string to reverse.
+     *he slug string to reverse.
      * @return The reversed slug string.
      */
     private String reverseSlugging(String slug) {
